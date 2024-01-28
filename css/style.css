@@ -26,8 +26,7 @@ img{
 
 .container{
     max-width: 1200px;
-    padding: 2rem;
-    padding-top: 5rem;
+    padding: 5rem 2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
@@ -131,6 +130,69 @@ img{
 .testimony blockquote{
     color: var(--white);
     line-height: 1.5;
+}
+
+@media screen and (min-width: 48rem){
+    .card-social-proof{
+        column-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-proof{
+        width: 80%;
+        text-align: left;
+    }
+
+    .title-social-proof{
+        font-size: 4rem;
+    }
+
+    .container-ratings{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .card-rating{
+        max-width: 25rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .left-auto{
+        margin-left: auto;
+    }
+
+    .margin-auto{
+        margin: 0 auto;
+    }
+    
+
+    .title-rating{
+        margin: 0;
+    }
+
+    .card-testimony{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(16rem, 1fr);
+        gap: 2rem;
+    }
+
+    .star-position{
+        align-self: start;
+    }
+
+    .center-position{
+        align-self: center;
+    }
+
+    .end-position{
+        align-self: end;
+    }
+
+
 }
 
 
